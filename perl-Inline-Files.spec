@@ -25,7 +25,8 @@ Summary(zh_CN):	Inline::Files Perl Ä£¿é
 Name:		perl-Inline-Files
 Version:	0.62
 Release:	1
-License:	Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 # Source0-md5:	1beb4548be878a28cafb379945c402b8
