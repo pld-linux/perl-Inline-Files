@@ -46,7 +46,7 @@ plików na koñcu kodu w Perlu.
 
 %build
 %{__perl} Makefile.PL </dev/null \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{!?_without_tests:%{__make} test}
 
