@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
-%define		pname	Files
+%define		pnam	Files
 Summary:	Inline::Files Perl module
 Summary(cs):	Modul Inline::Files pro Perl
 Summary(da):	Perlmodul Inline::Files
@@ -28,7 +28,7 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1beb4548be878a28cafb379945c402b8
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Filter
@@ -44,7 +44,7 @@ Modu³ Inline::Files - pozwalaj±cy na umieszczenie wielu wirtualnych
 plików na koñcu kodu w Perlu.
 
 %prep
-%setup -q -n %{pdir}-%{pname}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL </dev/null \
