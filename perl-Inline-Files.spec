@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Inline::Files
 Summary(it):	Modulo di Perl Inline::Files
 Summary(ja):	Inline::Files Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Inline::Files ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Inline::Files
+Summary(nb):	Perlmodul Inline::Files
 Summary(pl):	Modu³ Perla Inline::Files
 Summary(pt):	Módulo de Perl Inline::Files
 Summary(pt_BR):	Módulo Perl Inline::Files
