@@ -22,12 +22,12 @@ Summary(sv):	Inline::Files Perlmodul
 Summary(uk):	Модуль для Perl Inline::Files
 Summary(zh_CN):	Inline::Files Perl дё©И
 Name:		perl-Inline-Files
-Version:	0.60
-Release:	2
+Version:	0.62
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
-# Source0-md5:	92c40f41bbd369711eb887287af7d876
+# Source0-md5:	1beb4548be878a28cafb379945c402b8
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Filter
 BuildRequires:	rpm-perlprov >= 4.1-13
