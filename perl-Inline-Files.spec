@@ -44,7 +44,7 @@ plików na koñcu kodu w Perlu.
 %setup -q -n %{pdir}-%{pname}-%{version}
 
 %build
-perl Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null
 %{__make}
 %{!?_without_tests:%{__make} test}
 
