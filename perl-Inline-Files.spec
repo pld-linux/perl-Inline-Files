@@ -23,13 +23,13 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Files
 Summary(zh_CN):	Inline::Files Perl Ä£¿é
 Name:		perl-Inline-Files
 Version:	0.60
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Filter
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +44,8 @@ plików na koñcu kodu w Perlu.
 %setup -q -n %{pdir}-%{pname}-%{version}
 
 %build
-%{__perl} Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -63,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Inline/Files.pm
-%{perl_sitelib}/Inline/Files
+%{perl_vendorlib}/Inline/Files.pm
+%{perl_vendorlib}/Inline/Files
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
