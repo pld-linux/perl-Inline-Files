@@ -1,8 +1,26 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Inline
-%define	pname	Files
-Summary:	Inline::Files perl module
-Summary(pl):	Modu³ perla Inline::Files
+%define		pdir	Inline
+%define		pname	Files
+Summary:	Inline::Files Perl module
+Summary(cs):	Modul Inline::Files pro Perl
+Summary(da):	Perlmodul Inline::Files
+Summary(de):	Inline::Files Perl Modul
+Summary(es):	Módulo de Perl Inline::Files
+Summary(fr):	Module Perl Inline::Files
+Summary(it):	Modulo di Perl Inline::Files
+Summary(ja):	Inline::Files Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Inline::Files ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul Inline::Files
+Summary(pl):	Modu³ Perla Inline::Files
+Summary(pt):	Módulo de Perl Inline::Files
+Summary(pt_BR):	Módulo Perl Inline::Files
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Inline::Files
+Summary(sv):	Inline::Files Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Files
+Summary(zh_CN):	Inline::Files Perl Ä£¿é
 Name:		perl-Inline-Files
 Version:	0.60
 Release:	1
@@ -28,6 +46,7 @@ plików na koñcu kodu w Perlu.
 %build
 perl Makefile.PL </dev/null
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
