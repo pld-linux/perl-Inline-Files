@@ -6,22 +6,22 @@
 %define		pdir	Inline
 %define		pnam	Files
 Summary:	Inline::Files Perl module
-Summary(cs):	Modul Inline::Files pro Perl
-Summary(da):	Perlmodul Inline::Files
-Summary(de):	Inline::Files Perl Modul
-Summary(es):	Módulo de Perl Inline::Files
-Summary(fr):	Module Perl Inline::Files
-Summary(it):	Modulo di Perl Inline::Files
-Summary(ja):	Inline::Files Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Inline::Files ÆŞ ¸ğÁÙ
-Summary(nb):	Perlmodul Inline::Files
-Summary(pl):	Modu³ Perla Inline::Files
-Summary(pt):	Módulo de Perl Inline::Files
-Summary(pt_BR):	Módulo Perl Inline::Files
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Inline::Files
-Summary(sv):	Inline::Files Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Files
-Summary(zh_CN):	Inline::Files Perl Ä£¿é
+Summary(cs.UTF-8):   Modul Inline::Files pro Perl
+Summary(da.UTF-8):   Perlmodul Inline::Files
+Summary(de.UTF-8):   Inline::Files Perl Modul
+Summary(es.UTF-8):   MÃ³dulo de Perl Inline::Files
+Summary(fr.UTF-8):   Module Perl Inline::Files
+Summary(it.UTF-8):   Modulo di Perl Inline::Files
+Summary(ja.UTF-8):   Inline::Files Perl ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
+Summary(ko.UTF-8):   Inline::Files í„ ëª¨ì¤„
+Summary(nb.UTF-8):   Perlmodul Inline::Files
+Summary(pl.UTF-8):   ModuÅ‚ Perla Inline::Files
+Summary(pt.UTF-8):   MÃ³dulo de Perl Inline::Files
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl Inline::Files
+Summary(ru.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Inline::Files
+Summary(sv.UTF-8):   Inline::Files Perlmodul
+Summary(uk.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Inline::Files
+Summary(zh_CN.UTF-8):   Inline::Files Perl æ¨¡å—
 Name:		perl-Inline-Files
 Version:	0.62
 Release:	1
@@ -39,9 +39,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Inline::Files - Multiple virtual files at the end of your Perl code.
 
-%description -l pl
-Modu³ Inline::Files - pozwalaj±cy na umieszczenie wielu wirtualnych
-plików na koñcu kodu w Perlu.
+%description -l pl.UTF-8
+ModuÅ‚ Inline::Files - pozwalajÄ…cy na umieszczenie wielu wirtualnych
+plikÃ³w na koÅ„cu kodu w Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
