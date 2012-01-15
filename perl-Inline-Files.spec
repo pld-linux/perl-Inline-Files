@@ -23,13 +23,13 @@ Summary(sv.UTF-8):	Inline::Files Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl Inline::Files
 Summary(zh_CN.UTF-8):	Inline::Files Perl 模块
 Name:		perl-Inline-Files
-Version:	0.63
+Version:	0.68
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	460ed656cb55cba677ae774319958fc2
+# Source0-md5:	f20f920979fdfd1799410a75104ffa3e
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Filter
 BuildRequires:	rpm-perlprov >= 4.1-13
