@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Inline
 %define		pnam	Files
+%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Files Perl module
 Summary(cs.UTF-8):	Modul Inline::Files pro Perl
 Summary(da.UTF-8):	Perlmodul Inline::Files
@@ -30,8 +30,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f20f920979fdfd1799410a75104ffa3e
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Inline-Files/
 BuildRequires:	perl-Filter
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,7 +61,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
