@@ -4,7 +4,6 @@
 
 %define		pdir	Inline
 %define		pnam	Files
-%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Files Perl module
 Summary(cs.UTF-8):	Modul Inline::Files pro Perl
 Summary(da.UTF-8):	Perlmodul Inline::Files
